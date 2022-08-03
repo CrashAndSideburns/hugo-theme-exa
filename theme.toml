@@ -1,0 +1,12 @@
+name = "exa"
+license = "Unlicense"
+licenselink = "https://github.com/CrashAndSideburns/hugo-theme-exa/blob/main/UNLICENSE"
+description = "A Hugo theme based on the aesthetic of the exa file lister."
+homepage = "https://github.com/CrashAndSideburns/hugo-theme-exa"
+tags = []
+features = []
+min_version = "0.41.0"
+
+[author]
+  name = "Morgan Arnold"
+  homepage = "https://morganarnold.ca"
