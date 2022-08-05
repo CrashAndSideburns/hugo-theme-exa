@@ -1,0 +1,11 @@
+{{ define "main" }}
+<div class="content-cell">
+    <div class="prompt">
+        {{ partial "prompt" . }}
+    </div>
+    {{ .Content }}
+</div>
+<div class="return-cell">
+    {{ partial "return" . }}
+</div>
+{{ end }}

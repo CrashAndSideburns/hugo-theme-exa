@@ -1,0 +1,82 @@
+/* Set up the Source Code Pro font family */
+@font-face {
+    font-family: "Source Code Pro";
+    src: url("SourceCodePro-VariableFont_wght.ttf");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Source Code Pro";
+    src: url("SourceCodePro-Italic-VariableFont_wght.ttf");
+    font-style: italic;
+}
+
+/* Override box-sizing. Why is border-box not the default? */
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+/* Define all properties which should be universally or near-universally applied. */
+body {
+    background-color: #1a1b26;
+    font-family: "Source Code Pro", monospace;
+    color: #c0caf5;
+    font-size: 16pt;
+    font-weight: 300;
+    margin: 0;
+}
+
+/* Style the grid which forms the basic structure of all pages. */
+.grid {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: auto 2em;
+    padding: 2em;
+}
+
+/* Style the grid cell which contains the content on all pages. */
+.content-cell {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    align-self: start;
+    justify-self: start;
+    line-height: 1.4;
+}
+
+/* Style the list which contains the links on list pages. */
+.link-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the grid cell which contains the "Return" link on list and single pages. */
+.return-cell {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    align-self: end;
+    justify-self: end;
+}
+
+/* Don't underline the "Return" link. It looks awful. */
+.return-cell a {
+    text-decoration: none;
+}
+
+/* For some reason the font size set on body isn't inherited by headings, so it has to be set explicitly. I don't think that differently-sized headings look very good, so they're all set to the same font size as all other text. Different heading levels can be used for semantic reasons, but they all appear identical. */
+h1, h2, h3, h4, h5, h6 {
+    font-size: 16pt;
+    font-weight: 500;
+}
+
+/* For some reason the font colour set on body isn't inherited by links, so it has to be set explicitly. */
+a {
+    color: #c0caf5;
+}
+
+/* Make links bold when hovered over. */
+a:hover {
+    font-weight: 500;
+}
